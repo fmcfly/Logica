@@ -81,6 +81,36 @@ public class Logica{
 			break;
 			case 7: // Pasar de decimal a binario
 
+
+        System.out.println("Ingrese un número decimal:");
+        int numero = sc.nextInt();
+
+
+
+
+        String temp = " ";
+        if (numero > 0) { 
+            while (numero > 0) {
+                if (numero % 2 == 0) {
+                    temp = "0" + temp; 
+                } else {
+                    temp = "1" + temp;
+                }
+                numero = numero / 2;
+            }
+        }
+
+
+
+         else if (numero == 0) {
+            temp = "0";
+        } 
+        System.out.println("El número binario es: " + temp);
+
+
+
+
+
 			break;
 
 			case 8:
