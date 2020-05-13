@@ -137,6 +137,13 @@ public class Logica{
 			case 10: // Mostrar el mayor sueldo 		
 			break;
 			case 11: // Kilometros a millas
+			   double resultado;
+			   double km;
+			   System.out.println("Ingrese los kilometros que desea convertir a millas");
+			   km = sc.nextDouble();
+			   resultado=km/1.609344;
+			   System.out.println("El resultado a millas es:"+resultado);
+
 
 			break;
 			case 12: //Mostrar numeros primos 
