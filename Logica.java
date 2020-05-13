@@ -199,10 +199,10 @@ public class Logica{
 			break;
 			case 11: // Kilometros a millas
 			   double resultado;
-			   double km;
+			   double kmetros;
 			   System.out.println("Ingrese los kilometros que desea convertir a millas");
-			   km = sc.nextDouble();
-			   resultado=km/1.609344;
+			   kmetros = sc.nextDouble();
+			   resultado=kmetros/1.609344;
 			   System.out.println("El resultado a millas es:"+resultado);
 
 
