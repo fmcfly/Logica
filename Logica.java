@@ -8,6 +8,7 @@ public class Logica{
 		System.out.println("2. Llenar arreglo");
 		System.out.println("3. Fibonacci");
 		int opcion = sc.nextInt();
+
 		switch(opcion){
 			case 1://obteniendo el número de digitos de un número
 				System.out.println("Digita la cifra en enteros");
@@ -81,9 +82,47 @@ public class Logica{
 			case 7: // Pasar de decimal a binario
 
 			break;
-			case 8:// Media, mayor número, Menor número
+
+			case 8:
+			float media = 0;
+			float suma = 0;
+			int mayor = 0;
+			int menor = 0;
+
+			System.out.print("Por favor ingrese el tamano del arreglo: ");
+			int n = sc.nextInt();
+   			int[] arregloNumeros = new int[n];
+		
+		  	for (int i = 0; i < arregloNumeros.length; i++) {
+           	System.out.print("Ingrese el numero de la posicion " + (i) + " :");
+            arregloNumeros[i] = sc.nextInt();
+
+            //media
+			suma = arregloNumeros[i]+suma;
+			media = suma / arregloNumeros.length;
+       		 }
+
+			//menor
+			for (int i = 0; i < arregloNumeros.length; i++) {
+			if (i ==0 )
+			{
+				menor =arregloNumeros[i] ;
+			}
+			if(arregloNumeros[i] < menor) {
+                menor = arregloNumeros[i];
+            }
+			//mayor
+
+			else if  ( arregloNumeros[i] > mayor) {
+				mayor = arregloNumeros[i];
+			}
+			}
+	
+			System.out.println("La media es:"+ media +" ,el numero menor es: " + menor + ", el numero mayor es: " + mayor );
+
 
 			break;
+
 			case 9: // Factorial de un número
 
 			break;
