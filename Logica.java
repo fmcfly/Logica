@@ -140,6 +140,27 @@ public class Logica{
 
 			break;
 			case 12: //Mostrar numeros primos 
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Cuantos numeros primos deseas obtener?");
+			int limitePrimo = sc.nextInt();
+			int contador = 1;
+			int p = 2;
+			int d = 2;
+				while ( contador <= limitePrimo){
+				if ( p % d == 0){
+				if ( p == d) {
+				System.out.print(p + ",");
+					contador++;
+
+				}
+				d = 2;
+				p++;
+			} else {
+				d++;
+			}
+	 }
+
+	
 
 			break;
 			default:
