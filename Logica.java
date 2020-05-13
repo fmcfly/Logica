@@ -134,7 +134,38 @@ public class Logica{
 				}
 				System.out.println("el resultado es = "+factorial);
 			break;
-			case 10: // Mostrar el mayor sueldo 		
+			case 10: // Mostrar el mayor sueldo 	
+
+ String[ ] nombre = new String[50];
+    int [ ] sueldo = new int[1000];
+    int mayor = 0;  
+    int indiceM =0; 
+
+  
+
+  for(int i = 1; i<=5; i++)
+  {
+    System.out.println("Dijite Nombre del empleado " + i);
+   nombre[i] = sc.nextLine(); 
+
+   System.out.println("Dijite el sueldo del empleado " + i);   
+   sueldo[i] = sc.nextInt();
+   sc.nextLine();
+
+   if(sueldo[i] > mayor )
+   {
+	mayor = sueldo[i] ;
+   indiceM = i; 
+
+   }
+
+
+	}
+	
+
+   System.out.println("El sueldo mas alto  lo tiene " + nombre[indiceM]); 
+
+
 			break;
 			case 11: // Kilometros a millas
 
