@@ -62,6 +62,20 @@ public class Logica{
 				} 
 			break;
 			case 6: //Comprobar si un número es par o impar
+				System.out.println("Dame el numero");
+				int numero = sc.nextInt();
+				double residuo;
+				residuo = numero % 2 ;
+				System.out.println(residuo);
+
+				if(residuo == 0){
+			
+				System.out.println("EL NUMERO ES PAR");
+				}
+				else{
+				System.out.println("EL NUMERO ES IMPAR");
+				}
+
 
 			break;
 			case 7: // Pasar de decimal a binario
