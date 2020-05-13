@@ -124,7 +124,15 @@ public class Logica{
 			break;
 
 			case 9: // Factorial de un número
-
+				int factorial=1;
+				int limite=0;
+				Scanner scan= new Scanner(System.in);
+				System.out.println("dame el valor del factorial");
+				limite = scan.nextInt();
+				for(int i=1;i<=limite;i++){
+					factorial = factorial * i;
+				}
+				System.out.println("el resultado es = "+factorial);
 			break;
 			case 10: // Mostrar el mayor sueldo 		
 			break;
