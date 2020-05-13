@@ -50,7 +50,16 @@ public class Logica{
 
 			break;
 			case 5: // tabla de multiplicar de un número
+				System.out.println("Teclee el numero del cual quiere saber su tabla de multiplicar"); 
+				int numero = sc.nextInt();
+				int contador = 0;
+				int aux=0; 
 
+				while (contador <11 ){
+				aux=numero * contador;
+				System.out.println(numero +"*"+contador+" = "+aux);
+				contador ++;
+				} 
 			break;
 			case 6: //Comprobar si un número es par o impar
 
