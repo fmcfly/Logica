@@ -7,6 +7,8 @@ public class Logica{
 		System.out.println("1. Numero de cifras");
 		System.out.println("2. Llenar arreglo");
 		System.out.println("3. Fibonacci");
+		System.out.println("4. Celsius a Kelvin");
+
 		int opcion = sc.nextInt();
 
 		switch(opcion){
@@ -47,7 +49,27 @@ public class Logica{
 					System.out.print(","+fibo2);	 
 				}
 			break;
-			case 4:// centigrados a kelvin
+			case 4:// centigrados a kelvin			
+				int repetir = 0;		
+				double celsius = 0, kelvin = 0;
+				do{
+					
+					System.out.println("\n Este programa esta hecho para que usted sepa la conversion de grados celsius a grados kelvin" +
+									   "\n recuerde que la formula es Kelvin = celsius + 273  " );
+
+					System.out.println("\nBrinde los grados que desea convertir:");
+
+					celsius = sc.nextDouble();
+
+					kelvin = celsius + 273.15;
+
+					System.out.println("\nEl resultado de convertir "+ celsius +  " grados celsius"  );	
+					System.out.println("a Kelvin es: "+ kelvin +  " grados kelvin");	
+
+					System.out.println("\nSi desea repetir el proceso presione 1 caso contrario presione otro numero");
+					repetir = sc.nextInt(); 
+				
+				}while(repetir == 1);
 
 			break;
 			case 5: // tabla de multiplicar de un número
